@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Menu</title>
+    <link rel="stylesheet" href="../static/gmenu_style.css">
+</head>
+<body>
+    <div class="home_page">
+        <h1>Game Menu</h1>
+        <form action="/addgame" method="post">
+            <button type="submit">Add Game</button><br><br>
+        </form>
+        <form method="post" action="/removegame">
+            <button type="submit">Remove Game</button><br><br>
+        </form>
+        <form method="post" action="/games_tables">
+            <button type="submit">View Game Tables</button><br><br>
+        </form>
+        <form method="post" action="/gameprice">
+            <button type="submit">Change Game Price</button><br><br><br><br>
+        </form>
+        <form method="post" action="/">
+            <button type="submit">Main Menu</button><br><br>
+        </form>
+    </div>
+</body>
+</html>

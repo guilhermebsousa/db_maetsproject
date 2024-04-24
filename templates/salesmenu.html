@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Menu</title>
+    <link rel="stylesheet" href="../static/smenu_style.css">
+</head>
+<body>
+    <div class="home_page">
+        <h1>Sales Menu</h1>
+        <form action="/addsale" method="post">
+            <button type="submit">Add Sale</button><br><br>
+        </form>
+        <form method="post" action="/removesale">
+            <button type="submit">Remove Sale</button><br><br>
+        </form>
+        <form method="post" action="/sales">
+            <button type="submit">View Sale Table</button><br><br><br><br>
+        </form>
+        <form method="post" action="/">
+            <button type="submit">Main Menu</button><br><br>
+        </form>
+    </div>
+</body>
+</html>

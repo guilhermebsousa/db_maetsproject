@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Menu</title>
+    <link rel="stylesheet" href="../static/umenu_style.css">
+</head>
+<body>
+    <div class="home_page">
+        <h1>User Menu</h1>
+        <form action="/adduser" method="post">
+            <button type="submit">Add User</button><br><br>
+        </form>
+        <form method="post" action="/removeuser">
+            <button type="submit">Remove User</button><br><br>
+        </form>
+        <form method="post" action="/changeemail">
+            <button type="submit">Change E-Mail</button><br><br>
+        </form>
+        <form method="post" action="/changenickname">
+            <button type="submit">Change Nickname</button><br><br>
+        </form>
+        <form method="post" action="/users">
+            <button type="submit">View User Table</button><br><br><br><br>
+        </form>
+        <form method="post" action="/">
+            <button type="submit">Main Menu</button><br><br>
+        </form>
+    </div>
+</body>
+</html>

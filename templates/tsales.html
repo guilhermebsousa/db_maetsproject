@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Data</title>
+    <link rel="stylesheet" href="../static/table_style.css">
+</head>
+<body>
+    <div class='f_tables'>
+        <h1>Sales</h1>
+        <table border='1'>
+            <tr>
+                <th>ID Sale</th>
+                <th>ID User</th>
+                <th>ID Ggme</th>
+                <th>Sell Date</th>
+                <th>Value</th>
+            </tr>
+            {% for linha in dados %}
+            <tr>
+                {% for valor in linha %}
+                <td>{{ valor }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table><br><br>
+        <form class="foot" action="/" method="post">
+            <button type="submit">Main Menu</button>
+        </form>
+        <form class="sgame" action="/sales" method="post">
+            <input class="search" name='sch' id="sch" placeholder="Search Sale"></input>
+            <button class="bt" type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html> 

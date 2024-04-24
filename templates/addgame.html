@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Game</title>
+    <link rel="stylesheet" href="../static/add_style.css">
+</head>
+<body>
+    <div class="add_game">
+        <form action="http://127.0.0.1:5000/addgame" method="post">
+            <h1>Adding Game</h1>
+            <input type="text" id="title" name="title" placeholder="Title"><br><br>
+            <input type="text" id="genre" name='genre' placeholder="Genre"><br><br>
+            <input type="text" id="price" name='price' placeholder="Price"><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

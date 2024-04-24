@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Data</title>
+    <link rel="stylesheet" href="../static/tstyle.css">
+</head>
+<body>
+    <div class='f_tables'>
+        <table border='1'>
+            <caption>Sales</caption>
+            <tr>
+                <th>ID</th>
+                <th>ID User</th>
+                <th>ID Game</th>
+                <th>Total Value</th>
+            </tr>
+            {% for linha in dados %}
+            <tr>
+                {% for valor in linha %}
+                <td>{{ valor }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        <form action="/" method="post">
+            <button type="submit">Main Menu</button>
+        </form>
+    </div>
+</body>
+</html>

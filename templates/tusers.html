@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Data</title>
+    <link rel="stylesheet" href="../static/table_style.css">
+</head>
+<body>
+    <div class='f_tables'>
+        <h1>Users</h1>
+        <table border='1'>
+            <tr>
+                <th>User ID</th>
+                <th>Nickname</th>
+                <th>E-Mail</th>
+                <th>Register Date</th>
+            </tr>
+            {% for linha in dados %}
+            <tr>
+                {% for valor in linha %}
+                <td>{{ valor }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table><br><br>
+        <form class="foot" action="/" method="post">
+            <button type="submit">Main Menu</button>
+        </form>
+        <form class="sgame" action="/users" method="post">
+            <input class="search" name='sch' id="sch" placeholder="Search User"></input>
+            <button class="bt" type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html> 

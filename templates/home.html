@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/home_style.css">
+</head>
+<body>    
+    <div class="home_page">
+        <h1>MaetS Store Data Base</h1>
+        <div class="button_g">
+            <form action="/gamemenu" method="post">
+                <button type="submit">Games</button><br><br>
+            </form>
+            <form method="post" action="/usermenu">
+                <button type="submit">Users</button><br><br>
+            </form>
+            <form method="post" action="/salesmenu">
+                <button type="submit">Sales</button><br><br>
+            </form>
+        </div> 
+    </div>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p>{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
