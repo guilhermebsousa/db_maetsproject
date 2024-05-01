@@ -176,7 +176,6 @@ def addGame():
             setGames(title, genre, price)
             db.commit()
             cursor.close()
-            flash('Game Added')
             return redirect('/')
         return render_template('addgame.html')
 
