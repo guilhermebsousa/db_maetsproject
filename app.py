@@ -4,9 +4,9 @@ import mysql.connector
 
 #Conectando ao Banco de Dados
 db = mysql.connector.connect(
-        host='localhost',
-        user='root',
-        password='@Stradalle2002', 
+        host='',
+        user='',
+        password='', 
         database='maets_store')  
 if db.is_connected():
     print(f"Conectado ao banco de dados maets_store")
